@@ -72,7 +72,7 @@ function Player(x, y) {
       if (bullets[i].fromPlayer)
         count++;
     }
-    if (count < 4 || this.tripleShot) {
+    if (count < 9999999 || this.tripleShot) {
       var m = mousePos.copy();
       m.sub(createVector(this.x, this.y));
       m.setMag(this.size);
