@@ -70,7 +70,7 @@ function Player(x, y) {
     
     for (var i = 0; i < bullets.length; i++) {
       if (bullets[i].fromPlayer)
-        count++;
+        count--;
     }
     if (count < 9999999 || this.tripleShot) {
       var m = mousePos.copy();
