@@ -197,7 +197,7 @@ function displayCountDown() {
 }
 
 function createLevels() {
-  lives = 3;
+  lives = 100;
   
   //Level 1
   var o1 = [], e1 = [];
@@ -268,7 +268,7 @@ function createLevels() {
 }
 
 function createWaves() {
-  lives = 5;
+  lives = 300;
   
   for (var i = 1; i < 100; i++) {
     var player = new Player(width/2, height/2);
