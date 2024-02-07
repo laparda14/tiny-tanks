@@ -58,7 +58,7 @@ function Bullet(x, y, size, speed, fromPlayer, theta) {
     if (collideRectCircle(player.x, player.y, player.size, player.size, this.x, this.y, this.size)) {
       this.deactivate();
       player.hit();
-      lives--;
+      lives++;
     }
   
   }
